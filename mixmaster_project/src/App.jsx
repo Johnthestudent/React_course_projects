@@ -64,10 +64,10 @@ const router = createBrowserRouter([
 //query wrapping
 const App = () => {
   //Grab the component
-  <QueryClientProvider client={queryClient}>
+  return (  <QueryClientProvider client={queryClient}>
     <RouterProvider router={router}/>
     <ReactQueryDevtools initialIsOpen={false}/>
   </QueryClientProvider>
-
+  );
 };
 export default App;
